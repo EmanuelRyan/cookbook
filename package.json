@@ -1,0 +1,31 @@
+{
+  "name": "cookbook",
+  "version": "0.7.0",
+  "description": "Cookbook For JS",
+  "author": "aaronjxz@gmail.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ais-one/cookbook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ais-one/cookbook/issues"
+  },
+  "homepage": "https://github.com/ais-one/cookbook#readme",
+  "keywords": [
+    "nodejs"
+  ],
+  "scripts": {
+    "prepare": "git config core.hooksPath ./git-hooks || echo 'Can not set git hooks'",
+    "git:hash": "git rev-parse --verify --short HEAD",
+    "git:branch": "git rev-parse --abbrev-ref HEAD"
+  },
+  "engines": {
+    "node": ">=18",
+    "npm": ">=9"
+  },
+  "workspaces": [
+    "sandbox/*"
+  ],
+  "private": true
+}
