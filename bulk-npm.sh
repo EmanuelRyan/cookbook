@@ -1,5 +1,5 @@
-#!/bin/bash
-# number of arguments... $#
+# /bin/bash
+#!number of arguments... $#
 echo "Maintain npm packages across multiple projects - A script to save time"
 echo "supported commands: npm outdated, npm update, npm i [options] [package], npm r [package]"
 echo "IF RUNNING ON WINDOWS PLEASE ENSURE YOU INTEGRATE GIT BASH TO CMD SHELL WHEN INSTALLING GIT ON WINDOWS"
@@ -21,7 +21,7 @@ do
     "Quit")
       exit 0
       ;;
-    *) echo "invalid option $REPLY";;
+    !) echo "invalid option $REPLY";;
   esac
 done
 
@@ -72,3 +72,4 @@ done
 echo done...
 
 read
+ 
